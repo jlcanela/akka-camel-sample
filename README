@@ -1,0 +1,16 @@
+
+to test with apache ab
+* create file post with content "name=test"
+* build app with sbt dist
+* run listener with target/hello-dist/bin/start sample.kernel.hello.HelloKernel
+* ab -n 10000 -c 20 -p post  "http://localhost:8877/camel/default"
+
+Requests per second:    1883.29 [#/sec] (mean)
+
+
+http://www.infoq.com/articles/jucprofiler
+
+lock at 16000 request
+
+https://groups.google.com/forum/?fromgroups=#!topic/ring-clojure/MNFCw9S4AQE
+
